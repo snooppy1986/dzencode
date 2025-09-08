@@ -3,9 +3,9 @@ import { test, expect } from '@playwright/test';
 
 test('search', async ({ page }) => {
   
-  await page.goto('https://www.google.com/');
+  await page.goto('https://rahulshettyacademy.com/seleniumPractise/#/');
 
-/*   // Set search input value "ro" 
+  // Set search input value "ro" 
   await page.fill('input.search-keyword', 'ro');
 
   //  Find a card with carrots
@@ -35,5 +35,5 @@ test('search', async ({ page }) => {
   const carrotItem = page.locator('ul.cart-items>li').filter({hasText: 'Carrot - 1 Kg'}).first();  
   await carrotItem.locator('a.product-remove').click();  
 
-  await page.pause(); */
+  await page.pause();
 });
